@@ -1,11 +1,9 @@
-public class Conta {
+public abstract class Conta implements IConta{
     private int agencia;
     private int nome;
     private double saldo;
 
-    public void sacar(){}
-    public void depositar(){}
-    public void transferir(){}
+
 
     public int getAgencia() {
         return agencia;
@@ -20,4 +18,18 @@ public class Conta {
     }
 
 
+    @Override
+    public void sacar(double valor) {
+
+    }
+
+    @Override
+    public void depositar(double valor) {
+
+    }
+
+    @Override
+    public void transferir(double valor, Conta contaDestino) {
+
+    }
 }
